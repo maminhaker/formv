@@ -6,7 +6,7 @@ import arrow from './image/arrow.png'
 export default function SelectOption (props) {
   let clas = props.show ? "city-list__item" : "city-list__item--none"
 
-  let sityList = ["moscow", "kazan"]
+  // let sityList = ["moscow", "kazan"]
 
   const [namesity, setNameSity] = useState("Красноярск")
 
