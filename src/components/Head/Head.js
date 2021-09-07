@@ -1,5 +1,5 @@
 import './Head.css'
-import React, {useState} from 'react';
+import React, {useState, useEffect, useRef} from 'react';
 
 import rectangle from '../../image/image-form/Rectangle2.png';
 
@@ -7,13 +7,25 @@ import rectangle from '../../image/image-form/Rectangle2.png';
 function Head(props) {
   const [changeStatus, setChangeStatus] = useState(false)
   const [status, setStatus] = useState("Прежде чем действовать, надо понять")
+  const [statusInput, setStatusInput] = useState("status")
+
+  const inputEl = useRef(null);
+
+
 
   function changeStatusShow(e) {
+    inputEl.current.value = status;
     setChangeStatus(!changeStatus)
   }
 
   function statusText(e) {
-    setStatus(e.target.value)
+    setStatusInput(e.target.value)
+  }
+
+  function statusConfirm() {
+    setStatus(statusInput)
+
+    changeStatusShow()
   }
 
   return (
@@ -27,8 +39,18 @@ function Head(props) {
       </div>
 
       <div className={changeStatus ? "head__input-status" : "none"}>
-        <input type="text"  onKeyUp={statusText}/> <button onClick={changeStatusShow}>OK</button>
+        <input ref={inputEl} type="text" onKeyUp={statusText}/> <button onClick={statusConfirm}>OK</button>
       </div>
+
+
+
+
+
+
+
+
+
+
       
 
       <div className="head__wrapper-bottom">
