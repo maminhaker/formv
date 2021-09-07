@@ -1,0 +1,157 @@
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+
+  font-family: Arial;
+
+  box-sizing: border-box;
+
+  overflow-x: hidden;
+}
+
+.line {
+  width: 100%;
+  margin: 0;
+  margin-bottom: 35px;
+  border-bottom: 1px solid #E5E4E4;
+}
+
+.wrapper-main {
+  width: 990px;
+  height: 570px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.head {
+  width: 725px;
+}
+
+.head__wrapper-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.head__hello {
+  font-size: 30px;
+  line-height: 34px;
+  color: #666666;
+  font-weight: bold;
+  width: 510px;
+}
+
+.head__hello span {
+  color: black;
+}
+
+.head__status {
+  width: 90px;
+  height: 15px;
+  color: #0C77BB;
+  font-size: 12px;
+  line-height: 22px;
+  margin-top: 13px;
+  padding-bottom: 2px;
+  /* text-decoration: underline; */
+  border-bottom: 1px dashed #0C77BB;
+}
+
+.head__status:hover {
+  cursor: pointer;
+}
+
+.head__wrapper-bottom {
+  display: flex;
+}
+
+.head__img {
+  position: relative;
+  right: -225px;
+  top: 5px;
+  z-index: 1;
+}
+
+.head__status-text {
+  width: 500px;
+  height: 50px;
+  background-color: #EAEAEA;
+  margin-top: 10px;
+  margin-left: auto;
+  color: #404040;
+  font-size: 14px;
+  line-height: 22px;
+  padding: auto;
+  padding-left: 12px;
+  z-index: 2;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.chekbox {
+  width: auto;
+}
+
+.checkbox-name {
+  margin: auto 0;
+}
+
+.form__button-wrapper {
+  margin-left: 220px;
+}
+
+.form__button {
+  background: #71C838;
+  box-shadow: 0px 1px 0px #539D22;
+  width: 119px;
+  height: 40px;
+  border: none;
+  font-size: 18px;
+  line-height: 20px;
+  color: #FFFFFF;
+}
+
+.form__button:hover {
+  cursor: pointer;
+}
+
+.form__button-description {
+  font-size: 12px;
+  line-height: 20px;
+  color: #999999;
+}
+
+
+
+
+
+
+/* .city-list__item {
+  display: flex;
+  justify-content: space-between;
+  width: 335px;
+  height: 32px;
+  margin-right: 18px;
+  border: 1px solid #999999;
+  border-top: none;
+  position: relative;
+  background-color: #fff;
+
+
+  display: none;
+}
+
+.city-list__item:hover {
+  cursor: pointer;
+  background-color: #999999;
+} */
+
+
+
+.display-none {
+  display: none;
+}

@@ -1,0 +1,27 @@
+
+.form__input-wrapper {
+  display: flex;
+  align-content: center;
+  height: 32px;
+  margin-bottom: 40px;
+}
+
+.form__name {
+  width: 220px;
+  margin: auto 0;
+  font-size: 21px;
+  line-height: 19px;
+}
+
+input {
+  width: 335px;
+  margin-right: 18px;
+}
+
+.form__description {
+  font-size: 12px;
+  line-height: 20px;
+  color: #999999;
+  width: 350px;
+  margin: auto;
+}
